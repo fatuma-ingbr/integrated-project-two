@@ -1,171 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Welcome to Universtas</title>
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="vendor/css/normalize.css">
-    <link rel="stylesheet" href="vendor/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to GeoDatum</title>
+	<link rel="stylesheet" href="vendor/css/normalize.css">
+	<link rel="stylesheet" href="resources/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-<header>
-    <i class="fa fa-bars icon" onclick="toggle()"><span>Menu</span></i>
 
-    <nav class="navbar">
-        <i class="fa fa-university"><span>Universitas</span> </i>
-        <a href="#" class="active">Home</a>
-        <a href="#section-countries">Countries</a>
-        <a href="#section-testimonials">Testimonials</a>
-        <a href="about-us.html">About Us</a>
-    </nav>
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="about-us.html">About</a>
+	<a href="IP2_Map1.html">Map 1</a>
+	<a href="IP2_Map2.html">Map 2</a>
+	<a href="IP2_Map3.html">Map 3</a>
+	<a href="IP2_Map4.html">Map 4</a>
+	<a href="IP2_Map5.html">Map 5</a>
+	<a href="IP2_Map6.html">Map 6</a>
+</div>
 
-    <div class="hero-text">
-        <h1>Welcome to Unistat. <br> Find your stats here.</h1>
-        <p>
-            Find information about Maurtius, United Kingdom or Ghana. Here you will find all the
-            Universities established in the country as well as the statistics of the programmes
-            over 7 years. That is 2009 to 2015. Have fun and all the best searching for a university.
-        </p>
-        <a class="btn btn-full" href="#section-countries">View Countries</a>
-        <a class="btn btn-empty" href="#section-footer">Contact Us</a>
-    </div>
-</header>
+<div class="main">
 
-<section id="section-introduction">
-    <div class="row">
-        <h2 class="heading">Introduction</h2>
-    </div>
-
-    <div class="row">
-        <div class="col span-1-of-2 box ">
-            <p>
-                <br>
-                Trying to determine which college or university is best qualified to meet your unique academic,
-                professional,
-                and lifestyle objectives can be a difficult and time consuming endeavor. Our colleges and universities
-                database
-                was developed to help aspiring students and education minded professionals quickly and easily make
-                better,
-                more informed choices by providing them with highly detailed and comprehensive college information and
-                data,
-                that is relevant, reliable and up to date.
-            </p>
-            <br>
-            <a class="btn btn-full" href="#section-countries">Learn More</a>
-        </div>
-
-        <div class="col span-1-of-2 box">
-            <ion-icon name="stopwatch"></ion-icon>
-            <i class="ion-ios-stopwatch-outline icon-big"></i>
-            <figure class="country-photo"><img src="resources/img/intro.jpeg" alt="Introduction Image"></figure>
-        </div>
-
-    </div>
-</section>
-
-<section id="section-countries">
-    <div id="back-drop">
-        <div class="row">
-            <h2 class="heading">Countries</h2>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col span-1-of-3 box card">
-                <h3>United Kingdom</h3>
-                <figure class="country-photo"><img src="resources/img/uk.jpeg" alt="United Kingdom Image"></figure>
-                <p>
-                    Find all universities available in the United Kingdom here. Click on statistics to find the
-                    programmes
-                    stats.
-                </p>
-
-                <a class="btn btn-full" href="list-of-universities.html" onclick="saveChosenCountry(UK)">List of
-                    Universities</a>
-                <a class="btn btn-empty" href="statictics.html"
-                   onclick="saveChosenStatistics(GBR,programmes.both_sex)">Statistics</a>
-            </div>
-
-            <div class="col span-1-of-3 box card">
-                <h3>Ghana</h3>
-                <figure class="country-photo"><img src="resources/img/ghana.jpeg" alt="Ghana Image"></figure>
-                <p>
-                    Find all universities available in the Ghana here. Click on statistics to find the programmes stats.
-                </p>
-                <a class="btn btn-full" href="list-of-universities.html" onclick="saveChosenCountry(GHANA)">List of
-                    Universities</a>
-                <a class="btn btn-empty" href="statictics.html"
-                   onclick="saveChosenStatistics(GHA,programmes.both_sex)">Statistics</a>
-            </div>
-
-            <div class="col span-1-of-3 box card">
-                <h3>Mauritius</h3>
-                <figure class="country-photo"><img src="resources/img/maurtius.jpeg" alt="Mauritius Image"></figure>
-                <p>
-                    Find all universities available in the Mauritius here. Click on statistics to find the programmes
-                    stats.
-                </p>
-                <a class="btn btn-full" href="list-of-universities.html" onclick="saveChosenCountry(MAURITIUS)">List of
-                    Universities</a>
-                <a class="btn btn-empty" href="statictics.html"
-                   onclick="saveChosenStatistics(MUS,programmes.both_sex)">Statistics</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="section-testimonials">
-    <div class="row">
-        <h2 class="heading">Testimonials</h2>
-    </div>
-    <p class="row box card">
-        This website helped me a lot when I was searching for a university to attend. I used it to explore several
-        universities in multiple countries.
-        I didn't have use Google trying to find universties. Thank you so much for creating this website.
-        It is really useful
-        <br>
-        <span class="tname"> Name - Thelma Hoop</span>
-    </p>
+	<header>
+		<nav class="navbar">
+			<a href="">Overview</a>
+			<a href="">Countries</a>
+			<a href="">Testimonials</a>
+			<a href="">About Us</a>
+		</nav>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<i class="fa fa-bars icon" onclick="toggle()"><span>Menu</span></i>
 
 
-</section>
+		<div class=" hero-text">
+			<h1>Open Maps Find your weather, <br> earthquake and - here.</h1>
+			<p>
 
-<footer class="footer" id="section-footer">
-    <div class="row ">
-        <div class="col span-1-of-2 box">
-            <h2 class="heading">About Us</h2>
-            <p>
-                We try to present to you all college or university available in Mauritius, the united kingdom and Ghana.
-                Also, we show your the percentages of student enrollment
-            </p>
-            <a class="btn btn-full" href="about-us.html">Learn More</a>
-        </div>
+			</p>
+			<a class="btn btn-full" href="#section-countries">View IP Doc</a>
+			<a class="btn btn-empty" href="#section-footer">Contact Us</a>
+		</div>
+	</header>
 
-        <div class="col span-1-of-2 box">
-            <h2 class="heading">Contact Us</h2>
-            <p>
-                The African Leadership University,<br>
-                Power Mill Road<br>
-                Pamplemousses, 21001<br>
-                Mauritius<br>
-            </p>
-        </div>
-    </div>
-    <p class="copyright">
-        <span> Integrated Project Two Coursework.</span>
-    </p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="vendor/js/handlebars.min.js"></script>
-    <script src="resources/js/visualization.js"></script>
-    <script src="resources/js/script.js"></script>
-</footer>
+	<div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		        crossorigin="anonymous"></script>
+		<script src="vendor/js/handlebars.min.js"></script>
+		<script src="resources/js/visualization.js"></script>
+		<script src="resources/js/script.js"></script>
+	</div>
+</div>
 </body>
 </html>
