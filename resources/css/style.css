@@ -1,29 +1,4 @@
 
-Skip to content
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @ldosse
-
-1
-0
-
-    2
-
-ebenezergraham/integrated-project-two Private
-Code
-Issues 2
-Pull requests 1
-Projects 0
-Wiki
-Insights
-integrated-project-two/resources/css/style.css
-5dbb5c1 14 hours ago
-@ebenezergraham ebenezergraham a few adds
-734 lines (602 sloc) 11.1 KB
 /*HTML tags styling*/
 * {
     margin: 0;
@@ -221,6 +196,16 @@ p {
     background-size: cover;
 }
 
+#water {
+    background-image: linear-gradient(
+            rgba(100, 10, 39, 0.8),
+            rgba(15, 15, 39, 0.9)
+    ),
+    url("img/world6.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .hero-text {
     position: absolute;
     width: 1140px;
@@ -347,7 +332,7 @@ body {
 
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 5px;
 }
 
 @media screen and (max-height: 450px) {
