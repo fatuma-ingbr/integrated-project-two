@@ -14,7 +14,9 @@ html {
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);}
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    overflow: hidden;
+}
 
 h1, h2, h3 {
     font-weight: 300;
@@ -76,7 +78,7 @@ h3 {
 
 header {
     width: 100%;
-    height: 720px;
+    max-height: 725px;
     height: 100vh;
     transition: 2.5s;
     background-size: cover;
@@ -139,15 +141,6 @@ p {
     background-color: #29323c;
     color: whitesmoke;
     text-decoration: none;
-}
-
-.titleheader {
-    padding: 1% 5%;
-    color: white;
-    background-image: linear-gradient(rgba(100, 10, 39, 0.7), rgba(15, 15, 39, 0.9)), url("img/headbg.jpeg");
-    width: 100%;
-    height: 25vh;
-    background-size: cover;
 }
 
 #water {
@@ -307,26 +300,11 @@ p {
     margin-top: 8%;
 }
 
-.titleheader {
-    position: relative;
-    clear: both;
-    background-color: #0f0f27;
-}
-
-.titleheader h2 {
-    margin: 3%;
-}
-
 .list-img {
     text-align: center;
     margin-right: 10%;
     padding-top: 4.5%;
 
-}
-
-.list-img img {
-    width: 90%;
-    margin-bottom: 10%;
 }
 
 .heading {
@@ -511,15 +489,6 @@ p {
 
     .hero-text p {
         width: 100%;
-    }
-
-    .row {
-        margin: 2% 6%;
-    }
-
-    .box {
-        padding: 5%;
-        width: 90%;
     }
 
     .heading {

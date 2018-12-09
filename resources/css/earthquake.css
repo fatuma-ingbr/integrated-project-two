@@ -1,23 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-html,
-body,
-#container {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: helvetica, arial, sans-serif;
-}
-/* Always set the map height explicitly to define the size of the div
-      * element that contains the map. */
-
 #map {
-    height: 500px;
+    height: 600px;
     width: auto;
 }
 
@@ -33,6 +15,7 @@ main {
     height: 30%;
     width: 50%;
 }
+
 #container .feed-heading {
     height: 60px;
     padding: 1em 0 0 1em;
