@@ -197,7 +197,9 @@ p {
 }
 
 .btn-full:hover {
+    color: whitesmoke !important;
     box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px;
+    border: whitesmoke 1px dashed;
 }
 
 #section-countries {
