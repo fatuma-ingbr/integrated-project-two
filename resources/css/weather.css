@@ -1,0 +1,26 @@
+.panel-heading {
+  background: linear-gradient(#2269A6, #004784);
+}
+
+#city {
+  background: linear-gradient(#004784, #2269A6 10%);
+  color: #FFF;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#widget {
+  box-shadow: 0 3px 10px #222;
+  position: relative;
+  text-align:center;
+  /*margin-top: 25vmin;*/
+  padding: auto;
+  margin: auto; 
+}
+
+#unit {
+  color: #337AB7;
+  cursor: pointer;
+}
